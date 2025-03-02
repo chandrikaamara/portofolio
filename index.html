@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <div id="welcome-page">
+    <div class="welcome-content">
+      <h1>WELCOME TO MY PROFILE</h1>
+      <img src="chandu.jpg" alt="Chandrika Amara">
+      <h2>Hey!!! Chandrika Amara Here :)</h2>
+    </div>
+  </div>
   <nav>
     <ul>
       <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
@@ -41,7 +48,6 @@
       <i class="fas fa-database"></i>
     </div>
   </section>
-  
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-container">
@@ -95,5 +101,12 @@
   <footer>
     <p>&copy; 2024 My Portfolio</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        document.getElementById("welcome-page").classList.add("hidden");
+      }, 3000); // 3 seconds delay
+    });
+  </script>
 </body>
 </html>
